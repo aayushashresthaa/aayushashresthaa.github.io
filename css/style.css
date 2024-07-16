@@ -24,6 +24,10 @@ body {
   color: #4c4c4c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p, .paragraph {
   font-weight: 400;
   color: #4c4c4c;
@@ -632,6 +636,24 @@ textarea.form-control {
 
 /* /service */
 /* portfolio */
+.divider-line {
+  position: relative;
+  height: 6px;
+  background-color: purple;
+  margin: 20px 0;
+}
+
+.divider-line span {
+  position: absolute;
+  top: -12px; /* Adjust this value to align the text vertically */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* Same as the background of the container */
+  padding: 5px 10px;
+  color: #000; /* Text color */
+  font-weight: 888;
+}
+
 .hover-wrapper {
   overflow: hidden;
 }
@@ -674,6 +696,30 @@ textarea.form-control {
   right: 0;
   text-align: center;
 }
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+.contact-icon i {
+  margin-bottom: 10px;
+  color: #EA4335; /* Gmail red color */
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-icon p {
+  margin: 0;
+  font-size: 16px;
+}
+
 
 /* /portfolio */
 /* testimonial */
