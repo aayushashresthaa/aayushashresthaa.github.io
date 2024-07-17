@@ -343,7 +343,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #222222 !important;
+  background-color: #41228e !important;
 }
 
 /* icon */
@@ -389,6 +389,48 @@ a:hover {
   transition: .2s ease;
   border: 0;
 }
+
+/* social accounts icons */
+.social-icons {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px; /* Adjust this value to move the list up or down */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Adjust this value to move the list up or down */
+  left: 10%; /* Adjust this value to move the list left or right */
+  z-index: 1;
+}
+
+.social-icons li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.5em; /* Adjust this value to make icons bigger */
+}
+
+.social-icons a .icon-text {
+  opacity: 0;
+  margin-left: 10px;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  position: absolute;
+  white-space: nowrap;
+  left: 30px;
+  transform: translateX(-10px); /* Initial state to slide in text */
+}
+
+.social-icons a:hover .icon-text {
+  opacity: 1;
+  transform: translateX(0); /* Text slides in smoothly */
+}
+
 
 /* /slick slider */
 /* form */
@@ -535,7 +577,7 @@ textarea.form-control {
 }
 
 /* skills */
-.progress-wrapper {
+/* .progress-wrapper {
   height: 130px;
   overflow: hidden;
 }
@@ -592,7 +634,15 @@ textarea.form-control {
     -webkit-transform: translateX(-50%) rotate(360deg);
             transform: translateX(-50%) rotate(360deg);
   }
+} */
+
+.skill-title {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4); /* Adding shadow effect */
 }
+
 
 /* /skills */
 /* education */
@@ -635,6 +685,39 @@ textarea.form-control {
 }
 
 /* /service */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.line {
+  position: absolute;
+  width: 2px; /* Thickness of the line */
+  height: 80%; /* Adjust line height as needed */
+  background-color: #ccc; /* Line color */
+}
+
+/* Adjust the position of the line */
+.line {
+  left: 50%; /* Align to the center */
+  transform: translateX(-50%);
+}
+
+/* Optional: Style the timeline items */
+.timeline-item {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 /* portfolio */
 .divider-line {
   position: relative;

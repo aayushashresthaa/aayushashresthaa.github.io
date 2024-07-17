@@ -94,11 +94,19 @@
     <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
   </div>
   <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li class="mb-3"><a class="text-white" href="#"><i class="ti-facebook"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="#"><i class="ti-instagram"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="#"><i class="ti-dribbble"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter"></i></a></li>
+  <ul class="icon-list social-icons">
+    <li>
+        <a href="https://www.linkedin.com/in/your-profile-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span class="icon-text">LinkedIn</span>
+        </a>
+    </li>
+    <li>
+        <a href="mailto:your-email@example.com">
+            <i class="fas fa-envelope"></i>
+            <span class="icon-text">Gmail</span>
+        </a>
+    </li>
   </ul>
   <!-- /social icon -->
 </section>
@@ -127,73 +135,98 @@
       <div class="col-lg-12 text-center">
         <h2 class="section-title">Skills</h2>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" style="left: 90px;">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-            <div class="wave" data-progress="90%"></div>
+          <div class="skill-icon">
+            <i class="fas fa-paint-brush"></i> <!-- Replace with appropriate icon -->
           </div>
           <div class="card-footer bg-white">
-            <h4 class="card-title">UI Design (90%)</h4>
+            <h4 class="card-title skill-title">UI/UX Design</h4>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" style="left: 155px;">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-            <div class="wave" data-progress="60%"></div>
+          <div class="skill-icon">
+            <i class="fas fa-paint-brush"></i> <!-- Replace with appropriate icon -->
           </div>
           <div class="card-footer bg-white">
-            <h4 class="card-title">UX Design (60%)</h4>
+            <h4 class="card-title skill-title">Graphics Design</h4>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" style="left: 215px;">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-            <div class="wave" data-progress="80%"></div>
+          <div class="skill-icon">
+            <i class="fas fa-code"></i> <!-- Replace with appropriate icon -->
           </div>
           <div class="card-footer bg-white">
-            <h4 class="card-title">Graphics Design (80%)</h4>
+            <h4 class="card-title skill-title">Figma</h4>
           </div>
         </div>
       </div>
-      <!-- <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-            <div class="wave" data-progress="70%"></div>
+          <div class="skill-icon">
+            <i class="fas fa-file-image"></i> <!-- Replace with appropriate icon -->
           </div>
           <div class="card-footer bg-white">
-            <h4 class="card-title">Web App (70%)</h4>
+            <h4 class="card-title skill-title">Canva</h4>
           </div>
         </div>
-      </div> -->
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" style="margin-top: 10px;">
+        <div class="card shadow text-center">
+          <div class="skill-icon">
+            <i class="fab fa-adobe"></i> <!-- Replace with appropriate icon -->
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title skill-title">Adobe</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+
 <!-- /skills -->
 
 <!-- experience -->
 <section class="section">
   <div class="container">
-    <div class="row justify-content-around">
+    <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Career Timeline</h2>
       </div>
-      <div class="col-lg-3 col-md-4 text-center">
-        <img src="images/experience/icon-1.jpg" alt="icon">
-        <p class="mb-0">Jan 2007 - Feb 2009</p>
-        <h4>UI/UX Designer</h4>
-        <!-- <h6 class="text-light">WEBEX</h6> -->
-      </div>
-      <div class="col-lg-3 col-md-4 text-center" style="bottom: 30px;">
-        <img src="images/experience/icon-2.jpg" alt="icon" style="height: 95px;">
-        <p class="mb-0">Mar 2009 - Aug 2014</p>
-        <h4>UX & UI Designer</h4>
-        <!-- <h6 class="text-light">AUGMEDIX</h6> -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="timeline-content">
+            <h3>Early Career Beginnings</h3>
+            <p><strong>Company:</strong> ABC Company</p>
+            <p><strong>Position:</strong> Junior Designer</p>
+            <p><strong>Duration:</strong> January 20XX - December 20XX</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="timeline-content">
+            <h3>Growth and Challenges</h3>
+            <p><strong>Company:</strong> XYZ Solutions</p>
+            <p><strong>Position:</strong> Senior UX Designer</p>
+            <p><strong>Duration:</strong> June 20XX - Present</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <!-- Add more timeline items as needed -->
       </div>
     </div>
   </div>
 </section>
+
+
 <!-- ./experience -->
 
 <!-- portfolio -->
