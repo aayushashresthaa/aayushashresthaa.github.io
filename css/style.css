@@ -397,7 +397,7 @@ a:hover {
   margin-top: 10px; /* Adjust this value to move the list up or down */
   position: absolute; /* Absolute positioning */
   top: 50%; /* Adjust this value to move the list up or down */
-  left: 10%; /* Adjust this value to move the list left or right */
+  left: 1%; /* Adjust this value to move the list left or right */
   z-index: 1;
 }
 
